@@ -70,6 +70,9 @@ export default {
 					'gold': '#F3C060',
 					'midnight': '#1A1F2C',
 					'soft-blue': '#D3E4FD',
+					'blush': '#FECDD3',
+					'emerald': '#34D399',
+					'azure': '#60A5FA',
 				}
 			},
 			fontFamily: {
@@ -102,15 +105,35 @@ export default {
 					'0%': { opacity: '0' },
 					'100%': { opacity: '1' }
 				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'pulse': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.5' }
+				},
+				'shimmer': {
+					'0%': { backgroundPosition: '-200% 0' },
+					'100%': { backgroundPosition: '200% 0' }
+				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'fade-in': 'fade-in 0.5s ease-in-out forwards'
+				'fade-in': 'fade-in 0.5s ease-in-out forwards',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse': 'pulse 4s ease-in-out infinite',
+				'shimmer': 'shimmer 2s infinite'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'hero-pattern': 'linear-gradient(to right bottom, rgba(139, 92, 246, 0.7), rgba(26, 31, 44, 0.7))'
+				'hero-pattern': 'linear-gradient(to right bottom, rgba(139, 92, 246, 0.7), rgba(26, 31, 44, 0.7))',
+				'card-shine': 'linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.1) 50%, transparent 50%)'
+			},
+			boxShadow: {
+				'glow': '0 0 20px rgba(139, 92, 246, 0.5)',
+				'inner-glow': 'inset 0 0 20px rgba(139, 92, 246, 0.3)'
 			}
 		}
 	},
